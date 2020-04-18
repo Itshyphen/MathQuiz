@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Math Quiz</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+<center>
+<h1>Math is Fun</h1>
+    <form name=quizzer>
+        <input id="r" type=button value="Add" onClick="add();">
+        <input id="r" type=button value="Subtract" onClick="subtract();">
+        <input id="r" type=button value="Multiply" onClick="multiply();">
+        <input id="r" type=button value="Divide" onClick="divide();">
+        <input id="r" type=button value="Remainder" onClick="Remainder();">
+        <br>
+        <br>
+        <input  type="radio" name="arithmetic" checked>Easy
+        <input  type="radio" name="arithmetic">Moderate
+        <input  type="radio" name="arithmetic">Difficult
+        <br>
+        <br>
+        <button onclick="check();">Score Board</button>
+    </form>
+    <div id="ques">
+    <h2>Write the correct answer!</h2>
+    <h2 id="num">Solve it!</h2>
+    <input type="text" placeholder="Answer" value="" id="answer">
+    <button onclick="ans()">Submit</button>
+    </div>
+    <div id="res">
+    <p id="result"><b></b></p>
+    </div>
+</center>
+<script src="script.js"></script>
+</body>
+</html>
